@@ -1,0 +1,91 @@
+/* Basic */
+body{margin: 0;padding: 0;font-family: 'Ubuntu';overflow: hidden}
+/* Container */
+.container
+{
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.container > div
+{
+  width: 25%;
+  padding: 0;
+  margin: 0;
+  float: left;
+  background-size: cover;
+  position: relative;
+  flex-shrink: 2;
+  transition: .2s all ease-in-out;
+  background-position:center
+}
+.container > div:hover{width: 35%}
+.overlay
+{
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .8;
+}
+/* Box */
+.box
+{
+  text-align: center;
+  color: #fff
+}
+.box span
+{
+  display:  block;
+  font-size: 40px;
+  margin-bottom: 30px
+}
+a
+{
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  padding: 10px 70px;
+  border: 3px solid #fff;
+  width: 70PX;
+  color: #fff;
+  border-radius: 30px;
+  text-decoration: none;
+}
+a:hover
+{
+  background-color: #fff;
+}
+/* Images and Color */
+.one{background-image: url(../images/B1.jpg)}
+.two{background-image: url(../images/B2.png)}
+.three{background-image: url(../images/B3.jpg)}
+.four{background-image: url(../images/B4.jpg)}
+.overlay-one{background-color: #44b2e7}
+.overlay-two{background-color: #ff8a25}
+.overlay-three{background-color: #858585}
+.overlay-four{background-color: #f77674}
+.one a:hover{color: #44b2e7}
+.two a:hover{color: #ff8a25}
+.three a:hover{color: #858585}
+.four a:hover{color: #f77674}
+@media (max-width : 960px)
+{
+  body{overflow-y: auto}
+  .container{display: block}
+  .container > div:hover{width: 100%}
+  .container > div
+  {
+    width: 100%;
+    display: block;
+    float: none;
+
+  }
+}
